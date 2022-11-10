@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_baseline_wifi_off_24.xml" value="0.1385" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/fragment_squad.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/fragment_squad_details.xml" value="0.19610507246376813" />
