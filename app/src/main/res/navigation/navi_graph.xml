@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navi_graph"
+    app:startDestination="@id/squadFragment">
+
+    <fragment
+        android:id="@+id/squadFragment"
+        android:name="com.example.demo_sports.ui.fragment.SquadFragment"
+        android:label="Squads"
+        tools:layout="@layout/fragment_squad" >
+        <action
+            android:id="@+id/action_squadFragment_to_squadDetailsFragment"
+            app:destination="@id/squadDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/squadDetailsFragment"
+        android:name="com.example.demo_sports.ui.fragment.SquadDetailsFragment"
+        android:label="Squad Details"
+        tools:layout="@layout/fragment_squad_details">
+        <argument
+            android:name="match_data"
+            app:argType="com.example.demo_sports.model.ResponseFromApi" />
+    </fragment>
+</navigation>
